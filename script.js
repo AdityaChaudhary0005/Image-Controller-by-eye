@@ -1,5 +1,5 @@
 window.saveDataAcrossSessions = true ;// to store the data
-webgazer.showVideoPreview(false).showPredictionPoints(true) // to stop video preview
+
 const LOOK_DELAY = 1000 // 1 second // give some time delay to this
 const LEFT_CUTOFF = window.innerWidth / 4
 const RIGHT_CUTOFF = window.innerWidth - window.innerWidth / 4
@@ -55,6 +55,7 @@ webgazer
 
 
 
+
 function getNewImage(next = false) {
   const img = document.createElement("img");
   img.src = "https://picsum.photos/1000?" + Math.random();
@@ -63,3 +64,4 @@ function getNewImage(next = false) {
   return img;
 }
 
+webgazer.showVideoPreview(false).showPredictionPoints(true) // to stop video preview
